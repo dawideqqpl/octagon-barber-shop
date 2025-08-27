@@ -105,8 +105,6 @@ body {
 
 .hero {
   height: 100vh;
-  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), 
-              url('/api/placeholder/1920/1080') center/cover;
   display: flex;
   align-items: center;
   justify-content: center;

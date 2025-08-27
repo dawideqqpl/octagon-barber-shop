@@ -32,6 +32,12 @@ const App = () => {
     setIsMenuOpen(false);
   };
 
+  const heroStyles = {
+    backgroundImage: `linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url('/api/placeholder/1920/1080')`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  };
+
   const popularServices = [
     { name: "Strzyżenie krótkich włosów, boki maszynką", price: "90,00 zł", time: "45 min" },
     { name: "Combo (Strzyżenie + broda)", price: "130,00 zł", time: "1g 15min" },
@@ -96,7 +102,7 @@ const App = () => {
         </div>
       </nav>
 
-      <section id="home" className="hero">
+      <section id="home" className="hero" style={heroStyles}>
         <div className="hero-content">
           <h1>Octagon Barber Shop</h1>
           <p>Profesjonalne usługi fryzjerskie dla mężczyzn w samym sercu Katowic</p>
